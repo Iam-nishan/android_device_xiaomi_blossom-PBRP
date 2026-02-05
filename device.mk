@@ -1,3 +1,4 @@
+DEVICE_PATH := device/xiaomi/blossom
 #
 # Copyright (C) 2023 The OrangeFox Recovery Project
 #
@@ -68,12 +69,12 @@ RECOVERY_SYMLINKS += \
     system/lib64/libfscrypt.so:libfscrypttwrp.so
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/system/lib64/libfscrypttwrp.so:system/lib64/libfscrypttwrp.so
+    $(DEVICE_PATH)/recovery/root/system/lib64/libfscrypttwrp.so:system/lib64/libfscrypttwrp.so
 
 
 # --- MTK TEE bring-up for FBE decryption ---
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/init.recovery.mt6765.rc:init.recovery.mt6765.rc
+    $(DEVICE_PATH)/recovery/root/init.recovery.mt6765.rc:init.recovery.mt6765.rc
 
 # PBRP Decryption Blobs
 PRODUCT_COPY_FILES += \
