@@ -86,3 +86,14 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/system/lib64/libhidlbase.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libhidlbase.so \
     $(DEVICE_PATH)/recovery/root/system/lib64/libutils.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libutils.so \
     $(DEVICE_PATH)/recovery/root/system/lib64/android.hardware.gatekeeper@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/android.hardware.gatekeeper@1.0.so
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/04190000000000000000000000000000.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/04190000000000000000000000000000.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/08010203000000000000000000000000.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/08010203000000000000000000000000.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/14498ace2a8f11e880c8509a4c146f4c.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/14498ace2a8f11e880c8509a4c146f4c.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/3d08821c33a611e6a1fa089e01c83aa2.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/3d08821c33a611e6a1fa089e01c83aa2.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/7778c03fc30c4dd0a319ea29643d4d4b.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/7778c03fc30c4dd0a319ea29643d4d4b.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/86f623f6a2994dfdb560ffd3e5a62c29.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/86f623f6a2994dfdb560ffd3e5a62c29.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/c09c9c5daa504b78b0e46eda61556c3a.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/c09c9c5daa504b78b0e46eda61556c3a.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/c1882f2d885e4e13a8c8e2622461b2fa.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/c1882f2d885e4e13a8c8e2622461b2fa.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
