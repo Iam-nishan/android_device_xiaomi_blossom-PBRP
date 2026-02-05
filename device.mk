@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service-recovery \
+    $(DEVICE_PATH)/recovery/root/vendor/bin/teei_daemon:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/bin/teei_daemon:755 \
     android.hardware.gatekeeper@1.0-impl-recovery
 
 PRODUCT_VENDOR_PROPERTIES += \
@@ -71,15 +72,15 @@ RECOVERY_SYMLINKS += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/system/lib64/libfscrypttwrp.so:system/lib64/libfscrypttwrp.so
 
-
 # --- MTK TEE bring-up for FBE decryption ---
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/init.recovery.mt6765.rc:init.recovery.mt6765.rc
 
 # PBRP Decryption Blobs
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/recovery/root/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-recovery:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-recovery \
-    $(DEVICE_PATH)/recovery/root/system/lib64/libkeymaster4.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libkeymaster4.so \
+    $(DEVICE_PATH)/recovery/root/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-recovery:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-recovery:755 \
+    $(DEVICE_PATH)/recovery/root/vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod:755 \
+    $(DEVICE_PATH)/recovery/root/system/lib64/libkeymaster4.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libkeymaster4.so:755 \
     $(DEVICE_PATH)/recovery/root/system/lib64/libkeymaster4_1support.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libkeymaster4_1support.so \
     $(DEVICE_PATH)/recovery/root/system/lib64/libkeymaster_messages.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libkeymaster_messages.so \
     $(DEVICE_PATH)/recovery/root/system/lib64/libhidlbase.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libhidlbase.so \
