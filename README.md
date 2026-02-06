@@ -1,1 +1,1 @@
-PBRP Device tree for Blossom
+PBRP recovery for blossom
