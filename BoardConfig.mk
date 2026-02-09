@@ -129,8 +129,8 @@ TW_RECOVERY_ADDITIONAL_RESCUE_RAMDISK_FILES += \
     $(DEVICE_PATH)/recovery/root/system/etc/vintf:system/etc/vintf \
     $(DEVICE_PATH)/recovery/root/system/etc/init:system/etc/init
 # ===== FBE / Decryption Support =====
-# TW_INCLUDE_CRYPTO disabled
-# TW_INCLUDE_FBE disabled
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_FBE := true
 # ===== Keystore / Keymaster (Android 12+) =====
 # TW_INCLUDE_KEYMASTER disabled
 # TW_INCLUDE_KEYSTORE disabled
@@ -144,7 +144,3 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/recovery/root/vendor/etc/vintf/manifest.x
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1600
-
-# --- Disable crypto completely (MTK safe mode) ---
-TW_INCLUDE_CRYPTO := false
-TW_INCLUDE_FBE := false
